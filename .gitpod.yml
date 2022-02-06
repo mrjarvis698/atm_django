@@ -1,0 +1,13 @@
+tasks:
+  - init: |
+      echo 'Initalizing Project into Gitpod.'
+    command: |
+      echo 'Upgrading Pip to Latest.'
+      pip install --upgrade pip
+      echo 'Installing Pipenv'
+      pip install pipenv
+      echo 'Upgrading Python to 3.10.0 as per Project'
+      pyenv install 3.10.0
+      echo 'Synchronizing Pipfile.lock'
+      pipenv sync
+      echo 'Project Imported into Gitpod'
